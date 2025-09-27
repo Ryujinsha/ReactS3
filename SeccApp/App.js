@@ -23,7 +23,7 @@ export default function App() {
             />
       
             <TextInput
-              placeholder="Masukkan NIM Anda"
+              placeholder="Masukkan  NIM Anda"
               value={nim}
               onChangeText={setNim}
               style={styles.input}
