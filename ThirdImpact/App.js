@@ -8,13 +8,14 @@ export default function App() {
   const [expanded, setExpanded] = useState(null);
 
   const fruits = [
-    { key: 'Apple', emoji: '🍎', desc: 'Buah apel segar dan manis, kaya vitamin C.', image: { require: './assets/Apel.png' } },
-    { key: 'Banana', emoji: '🍌', desc: 'Pisang kaya kalium, baik untuk energi.', image: { uri: 'https://picsum.photos/100?2' } },
-    { key: 'Orange', emoji: '🍊', desc: 'Jeruk penuh vitamin C, menyegarkan.', image: { uri: 'https://picsum.photos/100?3' } },
-    { key: 'Mango', emoji: '🥭', desc: 'Mangga manis legit, favorit tropis.', image: { uri: 'https://picsum.photos/100?4' } },
-    { key: 'Grapes', emoji: '🍇', desc: 'Anggur bisa dimakan langsung atau dijus.', image: { uri: 'https://picsum.photos/100?5' } },
-    { key: 'Pineapple', emoji: '🍍', desc: 'Nanas rasa manis asam, segar di jus.', image: { uri: './assets/nanas.png' } },
-  ];
+  { key: 'Apple', emoji: '🍎', desc: 'Buah apel segar dan manis, kaya vitamin C.', image: require('./assets/Apel.png') },
+  { key: 'Banana', emoji: '🍌', desc: 'Pisang kaya kalium, baik untuk energi.', image: require('./assets/pisang.png') },
+  { key: 'Orange', emoji: '🍊', desc: 'Jeruk penuh vitamin C, menyegarkan.', image: require('./assets/jeruk.png') },
+  { key: 'Mango', emoji: '🥭', desc: 'Mangga manis legit, favorit tropis.', image: require('./assets/mangga.png') },
+  { key: 'Grapes', emoji: '🍇', desc: 'Anggur bisa dimakan langsung atau dijus.', image: require('./assets/anggur.png') },
+  { key: 'Pineapple', emoji: '🍍', desc: 'Nanas rasa manis asam, segar di jus.', image: require('./assets/nanas.png') },
+];
+
 
   const toggleExpand = (itemKey) => {
     setExpanded(expanded === itemKey ? null : itemKey);
